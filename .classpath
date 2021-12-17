@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-14">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry excluding="resources/|module-info.java" kind="src" path="src"/>
+	<classpathentry kind="src" path="items"/>
+	<classpathentry excluding="src/|items/|src/resources/" kind="src" path=""/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFx11.0.2">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
