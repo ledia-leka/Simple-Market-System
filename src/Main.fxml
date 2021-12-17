@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="405.0" maxWidth="405.0" prefHeight="405.0" prefWidth="405.0" style="-fx-background-color: #95B9C7;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainController">
+         <children>
+         
+      <ImageView fitHeight="380.0" fitWidth="400.0" layoutX="290.0" layoutY="12.0" rotate="90.0">
+         <image>
+            <Image url="@../items/unnamed.png" />
+         </image>
+      </ImageView>
+            <Label layoutX="221.0" layoutY="14.0" lineSpacing="5.0" text="WELCOME" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="49.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.65" specularConstant="1.58" specularExponent="6.51" surfaceScale="3.48">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                  <Light.Distant>
+                     <color>
+                        <Color red="0.22368420660495758" green="0.2153996080160141" blue="0.2153996080160141" />
+                     </color>
+                  </Light.Distant>
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Button id="buttonManager" fx:id="manager" depthTest="ENABLE" layoutX="157.0" layoutY="177.0" mnemonicParsing="false" onAction="#managerButton" style="-fx-background-color: #E3E4FA; -fx-border-color: #fcd6d6;" text="Manager">
+               <font>
+                  <Font name="Baskerville Old Face" size="26.0" />
+               </font>
+         <effect>
+            <DropShadow />
+         </effect>
+            </Button>
+            <Button fx:id="cashier" depthTest="ENABLE" layoutX="399.0" layoutY="177.0" mnemonicParsing="false" onAction="#cashierButton" style="-fx-background-color: #FDEEF4; -fx-border-color: white;" text="Cashier">
+               <font>
+                  <Font name="Baskerville Old Face" size="26.0" />
+               </font>
+         <effect>
+            <DropShadow />
+         </effect>
+            </Button>
+      <Label layoutX="14.0" layoutY="364.0" text="Ledia Leka" textFill="WHITE">
+         <font>
+            <Font name="Forte" size="19.0" />
+         </font>
+      </Label>
+         </children>
+      </AnchorPane>

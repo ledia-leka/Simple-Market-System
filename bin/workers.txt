@@ -1,0 +1,6 @@
+E1;Frediana;Endrizi;Rruga Ali Demi, Tirane, Alb;0662536478;Cashier;40;true;400.0;
+E2;Alma;Dhimo;Porcelan, Tirane,Alb;0633525552;Cashier;80;true;800.0;
+E3;Ilir;Malo;Rruga e Dibres, Tirane, Alb;8006399992;Helper;80;true;800.0;
+E4;Andi;Hoxha;Rruga Hoxhe Tasim, Tirane,Alb;0639965847;Helper;80;true;800.0;
+E5;Sara;Prifti;Rruga Prenk Jakova, Tirane,Alb;0699996352;Cashier;80;true;800.0;
+E6;Kristi;Mico;Rruga Don Bosko, Tirane, Alb;004256985;Helper;40;true;400.0;

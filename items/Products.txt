@@ -1,0 +1,20 @@
+
+F0;Pasta;150;70.0;Food;
+B0;Red Bull;30;170.0;Beverages;
+O0;Spoon Set;12;500.0;Other;
+F1;Rice;200;150.0;Food;
+F3;Flour;90;120.0;Food;
+F4;Oil;75;250.0;Food;
+F5;Chicken Breasts;20;400.0;Food;
+F6;Mashrooms;30;350.0;Food;
+F7;Salt;150;120.0;Food;
+F8;Black Pepper;15;200.0;Food;
+F9;Sugar;100;110.0;Food;
+B1;Coca Cola;75;150.0;Beverages;
+B3;Red Wine;20;2500.0;Beverages;
+B4;Beer;80;90.0;Beverages;
+O1;Phone Case;23;600.0;Other;
+O2;Nail Polish-Color Red;15;200.0;Other;
+O5;Plastic Cups;250;50.0;Other;
+B12;Water Bottle;600;50.0;Beverages;
+O7;Headphones;7;1500.0;Other;

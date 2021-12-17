@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="503.0" prefWidth="684.0" style="-fx-background-color: #f2f2f2;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProductEmployeeController">
+   <children>
+      <TabPane layoutX="0" layoutY="0" prefHeight="581.0" prefWidth="953.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab style="-fx-background-color: #8ED1F7; -fx-font-size: 18;" text="Add Products">
+               <content>
+                  <AnchorPane minHeight="50.0" minWidth="100.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #FFFCF7;">
+                     <children>
+                        <Separator layoutX="324.0" layoutY="119.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Separator layoutX="624.0" layoutY="119.0" orientation="VERTICAL" prefHeight="200.0" />
+                        <Button fx:id="addF" ellipsisString="" layoutX="139.0" layoutY="369.0" lineSpacing="2.0" mnemonicParsing="false" onAction="#AddFood" prefHeight="25.0" prefWidth="93.0" style="-fx-background-color: #8ED1F7;" text="Add to foods" textOverrun="LEADING_WORD_ELLIPSIS">
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="addB" layoutX="412.0" layoutY="372.0" mnemonicParsing="false" onAction="#AddBeverage" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #8ED1F7;" text="Add to beverages">
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="addO" layoutX="733.0" layoutY="376.0" mnemonicParsing="false" onAction="#AddOther" style="-fx-background-color: #8ED1F7;" text="Add to others">
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font></Button>
+                        <TextField fx:id="typeF" alignment="CENTER" layoutX="124.0" layoutY="78.0" prefHeight="34.0" prefWidth="148.0" style="-fx-background-color: #F9E8CB;" text="Food">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect></TextField>
+                        <TextField fx:id="typeB" alignment="CENTER" editable="false" layoutX="406.0" layoutY="81.0" prefHeight="34.0" prefWidth="158.0" style="-fx-background-color: #F9E8CB;" text="Beverages">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="typeO" alignment="CENTER" layoutX="694.0" layoutY="85.0" prefHeight="34.0" prefWidth="148.0" style="-fx-background-color: #F9E8CB;" text="Other">
+                           <font>
+                              <Font name="Calibri Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <DropShadow blurType="ONE_PASS_BOX" />
+                           </effect>
+                        </TextField>
+                        <TextField fx:id="FId" layoutX="104.0" layoutY="169.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Food Id" />
+                        <TextField fx:id="Fname" layoutX="104.0" layoutY="211.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Food name" />
+                        <TextField fx:id="foodQ" layoutX="104.0" layoutY="254.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Food Quantity" />
+                        <TextField fx:id="foodP" layoutX="104.0" layoutY="295.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Food Price" />
+                        <TextField fx:id="BId" layoutX="401.0" layoutY="172.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Beverage Id" />
+                        <TextField fx:id="Bname" layoutX="401.0" layoutY="214.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Beverage name" />
+                        <TextField fx:id="BQ" layoutX="401.0" layoutY="257.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Beverage Quantity" />
+                        <TextField fx:id="Bp" layoutX="401.0" layoutY="298.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Beverage Price" />
+                        <TextField fx:id="OId" layoutX="683.0" layoutY="175.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Other Id" />
+                        <TextField fx:id="Oname" layoutX="683.0" layoutY="217.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Other name" />
+                        <TextField fx:id="OtherQ" layoutX="683.0" layoutY="260.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Other Quantity" />
+                        <TextField fx:id="OtherP" layoutX="683.0" layoutY="301.0" prefHeight="31.0" prefWidth="175.0" promptText="Enter Other Price" />
+                        <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #52D017; -fx-border-width: 1; -fx-border-color: grey;" text="GO BACK" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab style="-fx-background-color: #F9E8CB; -fx-font-size: 18;" text="Show Products">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="503.0" prefWidth="819.0" style="-fx-background-color: #FAFCFC;">
+                     <children>
+                        <TableView fx:id="table" editable="true" layoutX="14.0" layoutY="66.0" prefHeight="374.0" prefWidth="926.0" style="-fx-border-color: #8ED1F7; -fx-border-width: 2;">
+                           <columns>
+                              <TableColumn fx:id="Id" prefWidth="109.0" text="ProductId" />
+                              <TableColumn fx:id="Name" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: #8ED1F7;" text="Name" />
+                              <TableColumn fx:id="Quantity" prefWidth="98.0" text="Quantity" />
+                              <TableColumn fx:id="Price" prefWidth="104.0" style="-fx-background-color: white; -fx-border-color: #8ED1F7;" text="Price" />
+                              <TableColumn fx:id="Type" prefWidth="104.0" text="Type" />
+                           </columns>
+                           <effect>
+                              <InnerShadow radius="9.2575" width="18.03" />
+                           </effect>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <Label layoutX="378.0" layoutY="15.0" text="Show products:">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="deleteB" layoutX="572.0" layoutY="454.0" mnemonicParsing="false" onAction="#deleteProd" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #8ED1F7;" text="Delete">
+                           <font>
+                              <Font name="Times New Roman Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="back1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #52D017; -fx-border-width: 1; -fx-border-color: grey;" text="GO BACK" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="LoadP" layoutX="245.0" layoutY="454.0" mnemonicParsing="false" onAction="#loadProducts" prefHeight="37.0" prefWidth="143.0" style="-fx-background-color: #8ED1F7;" text="Load Products">
+                           <font>
+                              <Font name="Times New Roman Bold" size="17.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+             <Tab style="-fx-background-color: #ECC5C0; -fx-font-size: 18;" text="Employees">
+               <content>
+                  <AnchorPane minHeight="50.0" minWidth="100.0" prefHeight="495.0" prefWidth="856.0" style="-fx-background-color: #FFFCF7;">
+                     <children>
+                        <Label layoutX="88.0" layoutY="42.0" text="ADD EMPLOYEES">
+                           <font>
+                              <Font name="Britannic Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="99.0" text="Employee Id" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="100.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="25.0" layoutY="131.0" text="First name" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="140.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="26.0" layoutY="156.0" text="Last name" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="180.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="193.0" text="Address" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="220.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="37.0" layoutY="245.0" text="Phone no" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="260.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="29.0" layoutY="297.0" text="Position" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="300.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="39.0" layoutY="307.0" text="Work H." AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="340.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="49.0" layoutY="317.0" text="Fees Paid" AnchorPane.leftAnchor="27.0" AnchorPane.topAnchor="380.0">
+                           <font>
+                              <Font name="Cambria Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="add" layoutX="129.0" layoutY="420.0" minWidth="75.0" mnemonicParsing="false" onAction="#saveButton" style="-fx-background-color: #ECC5C0; -fx-border-width: 1; -fx-border-color: black;" text="Add">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX">
+                                 <color>
+                                    <Color red="0.25" green="0.25" blue="0.25" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <TextField fx:id="tf_id" alignment="CENTER" layoutX="130.0" layoutY="98.0" promptText="Enter Id" style="-fx-border-color: #ECC5C0; -fx-border-width: 2; -fx-background-color: #FEFCFF;" />
+                        <TextField fx:id="tf_name" alignment="CENTER" layoutX="130.0" layoutY="136.0" promptText="Enter name" style="-fx-border-color: #ECC5C0; -fx-border-width: 2; -fx-background-color: #FEFCFF;" />
+                        <TextField fx:id="tf_surname" alignment="CENTER" layoutX="130.0" layoutY="176.0" promptText="Enter last name" style="-fx-border-color: #ECC5C0; -fx-border-width: 2; -fx-background-color: #FEFCFF;" />
+                        <TextField fx:id="tf_phone" alignment="CENTER" layoutX="128.0" layoutY="256.0" promptText="Enter phone no" style="-fx-border-color: #ECC5C0; -fx-border-width: 2; -fx-background-color: #FEFCFF;" />
+                        <TextField fx:id="tf_workh" alignment="CENTER" layoutX="128.0" layoutY="336.0" promptText="Enter work hours" style="-fx-border-color: #ECC5C0; -fx-border-width: 2; -fx-background-color: #FEFCFF;" />
+                        <TextField fx:id="tf_address" alignment="CENTER" layoutX="130.0" layoutY="216.0" promptText="Enter address" style="-fx-border-color: #ECC5C0; -fx-border-width: 2; -fx-background-color: #FEFCFF;" />
+                        <ChoiceBox fx:id="chbox" layoutX="129.0" layoutY="298.0" prefWidth="150.0" style="-fx-background-color: #FDEEF4; -fx-border-color: black;" />
+                        <ChoiceBox fx:id="feeBox" layoutX="129.0" layoutY="377.0" prefWidth="150.0" style="-fx-background-color: #FDEEF4; -fx-border-color: black;" />
+                        <TableView fx:id="tableemps" layoutX="316.0" layoutY="60.0" prefHeight="390.0" prefWidth="625.0">
+                          <columns>
+                            <TableColumn fx:id="EmpId" prefWidth="62.0" style="-fx-border-color: #FFE87C;" text="E.ID" />
+                              <TableColumn fx:id="fullname" prefWidth="150.0" style="-fx-background-color: #E3E4FA;" text="Full name">
+                                 <columns>
+                                    <TableColumn fx:id="fname" prefWidth="75.0" style="-fx-background-color: #E3E4FA;" text="Firstname" />
+                                    <TableColumn fx:id="lname" prefWidth="75.0" style="-fx-background-color: #E3E4FA;" text="Lastname" />
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="address" prefWidth="145.0" style="-fx-border-color: #FFE87C;" text="Address" />
+                              <TableColumn fx:id="phone" prefWidth="79.0" style="-fx-background-color: #E3E4FA;" text="Phone" />
+                              <TableColumn fx:id="position" prefWidth="88.0" style="-fx-border-color: #FFE87C;" text="Position" />
+                              <TableColumn fx:id="workH" prefWidth="52.0" style="-fx-background-color: #E3E4FA;" text="Work H." />
+                              <TableColumn fx:id="booleAN" prefWidth="48.0" text="Paid" />
+                          </columns>
+                        </TableView>
+                        <Button fx:id="Delete" layoutX="718.0" layoutY="466.0" minWidth="75.0" mnemonicParsing="false" onAction="#deleteEmp" style="-fx-background-color: #FFE87C; -fx-border-width: 1; -fx-border-color: black;" text="Delete">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX">
+                                 <color>
+                                    <Color red="0.25" green="0.25" blue="0.25" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="back2" layoutX="20.0" layoutY="494.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: #52D017; -fx-border-width: 1; -fx-border-color: grey;" text="GO BACK" textFill="WHITE">
+                           <font>
+                              <Font name="Cambria Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="LoadE" layoutX="442.0" layoutY="466.0" minWidth="75.0" mnemonicParsing="false" onAction="#loadEmployees" style="-fx-background-color: #FFE87C; -fx-border-width: 1; -fx-border-color: black;" text="Load Employees">
+                           <font>
+                              <Font name="Cambria Bold" size="18.0" />
+                           </font>
+                           <effect>
+                              <InnerShadow blurType="TWO_PASS_BOX">
+                                 <color>
+                                    <Color red="0.25" green="0.25" blue="0.25" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
